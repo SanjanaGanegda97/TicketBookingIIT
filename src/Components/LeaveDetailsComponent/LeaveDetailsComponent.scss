@@ -1,0 +1,53 @@
+.leave-details-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 120%;
+    
+    /* Default left border */
+    border-left: 4px solid #007bff; // Default blue color for the left border
+    padding-left: 16px;
+
+    // Default strong color
+    strong {
+      color: #007bff; // Default blue color for labels
+    }
+  
+    &.medical-border {
+      border-left-color: red; // Red for medical leave
+      
+      strong {
+        color: red; // Change label color to red
+      }
+    }
+  
+    &.annual-border {
+      border-left-color: green; // Green for annual leave
+      
+      strong {
+        color: green; // Change label color to green
+      }
+    }
+  
+    .leave-details-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #333;
+
+      // Change title color based on border class
+      &.medical-border {
+        color: red; // Change title color to red for medical leave
+      }
+      
+      &.annual-border {
+        color: green; // Change title color to green for annual leave
+      }
+    }
+  
+    p {
+      margin: 5px 0;
+      color: #555;
+    }
+}

@@ -1,0 +1,26 @@
+.progressbar-wrapper {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    padding: 0;
+    margin-top: -80px !important;
+
+    @media (max-width: 1536px) {
+        margin-top: 150px !important;
+    }
+}
+
+.main-container {
+    width: 1800px; 
+    height: 900px;
+    padding: 20px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    background-color: #fff; 
+
+    @media (max-width: 768px) {
+        width: 90%; 
+        height: auto; 
+    }
+}

@@ -1,0 +1,106 @@
+/* MyProfileComponent.scss */
+
+.my-pro-container {
+  padding: 40px;
+}
+
+.profile-flex-container {
+  display: flex; // Use Flexbox for horizontal layout
+  justify-content: space-between; // Space between profile and leave count
+}
+
+.profile-container {
+  background-color: white; // Keep white background for profile container
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 600px; // Set max width for profile container
+  margin-right: 20px; // Space between profile and leave count
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 400px;
+
+  &-title {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #333;
+  }
+
+  .profile-picture {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  &-info {
+    margin-top: 20px;
+  }
+
+  &-item {
+    margin-bottom: 20px;
+
+    .profile-readonly {
+      display: block;
+      padding: 10px;
+      background-color: #f8f9fa; // Light grey background for readonly fields
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      color: #007bff;
+      font-size: 16px;
+      margin-top: 5px;
+    }
+  }
+}
+
+.leave-count-container {
+  max-width: 600px; // Set a width for the leave count container
+  padding: 20px;
+  background-color: white; // Optional: keep it consistent with the profile card
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.leave-count-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.leave-cards {
+  display: flex; // Align cards in a row
+  flex-direction: row; // Change to row layout
+  justify-content: space-between; // Space cards evenly
+  gap: 10px; // Space between cards
+}
+
+.leave-card {
+  background-color: #f8f9fa; // Light gray background
+  border: 1px solid #ddd; // Light border
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center; // Center align text
+
+  h4 {
+    margin: 0; // Remove margin from the title
+  }
+
+  p {
+    font-size: 18px; // Increase font size for the count
+    color: #007bff; // Change color for visibility
+  }
+}
+
+.profile-label {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* New styles for the grey box */
+.grey-box {
+  background-color: #f0f0f0; // Light grey background
+  padding: 20px; // Padding for the box
+  border-radius: 8px; // Rounded corners
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Subtle shadow
+}

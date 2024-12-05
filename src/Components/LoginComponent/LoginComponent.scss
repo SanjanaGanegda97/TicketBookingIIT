@@ -1,0 +1,65 @@
+// Variables for colors and fonts
+$primary-color: #007bff; // Blue color for the button
+$secondary-color: #f8f9fa; // Light background color
+$text-color: #333; // Dark text color
+$border-radius: 5px; // Rounded corners
+
+.login {
+  background-color: $secondary-color;
+  padding: 20px;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 55px;
+
+  .login-heading {
+    text-align: center; // Center the heading
+    color: $primary-color;
+    margin-bottom: 20px;
+  }
+
+  .login-label {
+    display: block; // Make labels block elements
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: $text-color;
+    text-align: left; // Left-align the labels
+  }
+
+  .login-input-field {
+    width: 90%; // Set a width for the input fields
+    padding: 10px;
+    margin-bottom: 15px; // Add margin at the bottom
+    border: 1px solid #ccc;
+    border-radius: $border-radius;
+    font-size: 16px;
+    display: block; // Ensure the input is a block element for alignment
+    margin-left: 0; // Align input field to the left
+
+    &:focus {
+      border-color: $primary-color;
+      outline: none;
+    }
+  }
+
+  .login-button {
+    width: 40%; // Set a width for the button
+    padding: 10px;
+    background-color: $primary-color;
+    color: #fff;
+    border: none;
+    border-radius: $border-radius;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; // Ensure the button is a block element for centering
+    margin: 0 auto; // Center the button
+    font-family: "Poppins";
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}

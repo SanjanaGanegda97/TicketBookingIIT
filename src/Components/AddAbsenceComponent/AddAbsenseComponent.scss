@@ -1,0 +1,114 @@
+.leave-app-container{
+  padding: 40px;
+  align-items: center;
+}
+
+.leave-application {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  &-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  &-info {
+    color: #555;
+    margin-bottom: 20px;
+
+    .leave-count,
+    .optional-leave-count {
+      font-weight: bold;
+      color: #007bff;
+    }
+  }
+
+  &-form-group {
+    margin-bottom: 20px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+      font-weight: 500;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+
+      &:focus {
+        border-color: #007bff;
+        outline: none;
+      }
+    }
+
+    .reason-textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    .leave-type-radio-group,
+    .day-type-radio-group {
+      display: flex;
+      gap: 20px;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      
+
+      label {
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        input {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  &-buttons {
+    display: flex;
+    gap: 10px;
+
+    .btn-primary {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn-secondary {
+      background-color: #6c757d;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+ 
+  }
+}
+
+.user-name-readonly {
+  color: #555; /* Darker text for readability */
+  font-size: 16px; /* Adjust font size */
+  font-weight: normal; /* Optional: adjust font weight */
+}
+
+
+
+

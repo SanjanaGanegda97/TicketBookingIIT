@@ -1,0 +1,79 @@
+/* ProgressBarComponent.scss */
+
+.progress-bar-container {
+    display: flex;
+    justify-content: center; /* Center the progress bar */
+    align-items: center; /* Align items vertically */
+    width: 100%;
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+.progress-bar {
+    display: flex;
+    align-items: flex-start; /* Align the steps to the start vertically */
+    width: 100%; /* Make progress bar take full width */
+    position: relative; /* Position for step lines */
+}
+
+.step {
+    flex: 1; /* Allow steps to take equal space */
+    text-align: center; /* Center titles */
+    position: relative; /* Position for the line */
+}
+
+.step-title {
+    font-size: 16px; /* Set font size for step titles */
+    margin-bottom: 5px; /* Space below titles */
+    font-weight: bold; /* Make the step title bold */
+}
+
+/* Default title color */
+.upcoming-step {
+    color: grey; /* Upcoming step title in grey */
+}
+
+/* Completed step title color */
+.completed-step {
+    color: green; /* Completed step title in green */
+}
+
+/* Current step title color */
+.current-step {
+    color: #007bff; /* Current step title in #007bff */
+}
+
+/* Line styles */
+.step-line {
+    position: relative; /* Position line relative to the step */
+    height: 4px; /* Set line thickness */
+    background-color: grey; /* Default line color */
+    margin-top: 10px; /* Add gap above the line */
+    margin-bottom: 10px; /* Add gap below the line for spacing */
+    flex-grow: 1; /* Allow line to stretch */
+}
+
+/* White part at the end of each line */
+.step-line::after {
+    content: ""; /* Make the pseudo-element visible */
+    position: absolute; /* Position relative to the line */
+    right: -5px; /* Move it slightly outside the line */
+    top: 0; /* Align with the top of the line */
+    width: 8px; /* Width of the white part */
+    height: 100%; /* Match the height of the line */
+    background-color: white; /* White background */
+}
+
+/* Completed line color */
+.completed-line {
+    background-color: green; /* Completed line in green */
+}
+
+/* Current line color */
+.current-line {
+    background-color: #007bff; /* Current line in #007bff */
+}
+
+/* Upcoming line color */
+.upcoming-line {
+    background-color: grey; /* Upcoming line in grey */
+}

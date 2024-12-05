@@ -1,0 +1,15 @@
+.myprofile-data-container {
+    display: flex; /* Use flexbox for layout */
+  }
+  
+  .mypro-sidebar {
+    //width: 250px; /* Adjust the width of the sidebar */
+    //background-color: #f0f0f0; /* Optional: background color for sidebar */
+  }
+  
+  .myprofile-datacontent {
+    flex: 1; /* Take up remaining space */
+    padding: 20px; /* Add some padding */
+    background-color: #fff; /* Optional: background color for content */
+  }
+  

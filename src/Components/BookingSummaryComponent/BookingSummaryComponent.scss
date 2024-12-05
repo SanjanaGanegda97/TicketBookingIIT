@@ -1,0 +1,52 @@
+.booking-summary-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px; // Set a maximum width for the overall container
+    margin: 0 auto; // Center the container
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px; // Adjusted padding for a more compact look
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1; // Ensure both cards take equal space
+    min-width: 300px; // Set a minimum width for responsiveness
+    max-height: auto; // Ensure height adjusts based on content
+  }
+  
+  .summary-header {
+    display: flex;
+    justify-content: center; // Center the title
+    margin-bottom: 10px;
+  }
+  
+  .event-title, .summary-title {
+    background-color: #f0f0f0; // Grey background for the title
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .subtotal {
+    font-weight: bold;
+    color: #d9534f; // Highlight color for subtotal
+    margin-top: 10px; // Space above subtotal
+  }
+
+  .book-tickets-summary-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+  

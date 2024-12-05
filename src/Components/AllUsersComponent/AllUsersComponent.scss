@@ -1,0 +1,60 @@
+.all-users-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .users-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; // Space between user cards
+    }
+
+    .user-card {
+        background-color: #f8f9fa; // Light background
+        border: 1px solid #ddd; // Border for the card
+        border-radius: 5px; // Rounded corners
+        padding: 15px; // Padding inside the card
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+
+        .user-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .user-item {
+            margin-bottom: 10px; // Space between items
+        }
+
+        .user-label {
+            font-weight: bold; // Make label bold
+        }
+
+        .user-dropdown {
+            margin-top: 5px; // Space above the dropdown
+            padding: 5px; // Padding inside the dropdown
+            border-radius: 3px; // Rounded corners for dropdown
+            border: 1px solid #ccc; // Light border
+            width: 100%; // Full width
+        }
+    }
+}
+
+
+.change-user-type-btn {
+    margin-top: 10px; // Adds some space above the button
+    padding: 8px 12px; // Padding for button
+    background-color: #007bff; // Primary color
+    color: #fff; // White text
+    border: none; // No border
+    border-radius: 4px; // Rounded corners
+    cursor: pointer; // Change cursor on hover
+
+    &:hover {
+        background-color: darken(#007bff, 10%); // Darken on hover
+    }
+}

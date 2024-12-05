@@ -1,0 +1,105 @@
+// Define your color variables
+$primary-color: #007bff; // Example primary color
+$text-color: #333; // Dark text color
+$background-color: #f8f9fa; // Light background color
+$hover-color: darken($primary-color, 10%); // Darken hover color for links
+
+.nav-bar-header {
+  background-color: $background-color; // Background color for the header
+  padding: 10px 20px; // Padding for the header
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Box shadow for depth
+
+  .nav-bar-container {
+    display: flex; // Use flexbox for layout
+    justify-content: space-between; // Space between heading and nav links
+    align-items: center; // Align items vertically centered
+    max-width: 1200px; // Maximum width of the container
+    margin: 0 auto; // Center the container
+    width: 100%; // Ensure it takes full width
+
+    .nav-bar-logo {
+        display: flex; // Flex for aligning logo and heading
+        align-items: center; // Center vertically
+        //margin-right: auto; // Push heading to the left
+    
+        .logo-image {
+          height: 40px; // Adjust as necessary for your logo
+          width: auto; // Maintain aspect ratio
+          margin-right: 10px; // Space between logo and heading
+        }
+    }
+  }
+
+  .nav-bar-heading {
+    font-size: 24px; // Font size for heading
+    color: $text-color; // Text color
+    text-decoration: none; // Remove underline
+    margin-right: auto; // Push heading to the left
+  }
+
+  nav {
+    margin-left: auto; // Push nav to the right
+    div {
+      display: flex; // Use flexbox for nav links
+      gap: 20px; // Space between links
+    }
+
+    a {
+      color: $primary-color; // Link color
+      text-decoration: none; // Remove underline
+      font-size: 16px; // Font size for links
+      transition: color 0.3s; // Smooth color transition
+
+      &:hover {
+        color: $hover-color; // Change color on hover
+      }
+    }
+  }
+}
+
+// Responsive adjustments (optional)
+@media (max-width: 768px) {
+  .nav-bar-header {
+    flex-direction: column; // Stack header items vertically
+    align-items: flex-start; // Align items to the left
+  }
+}
+
+.logout-btn {
+    background: #fff;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-family: "Poppins";
+    cursor: pointer;
+    font-size: 1em;
+  }
+
+
+
+    
+    .auth-link {
+      color: #fff !important; // Change text color to white
+      text-decoration: none; // Remove underline
+      text-align: center;
+      font-size: 16px; // Font size for links
+      transition: color 0.3s; // Smooth color transition
+      margin-right: 15px; // Add margin to the right of each button (except the last one)
+      background-color: #007bff;
+      padding: 15px;
+      width: 50px;
+      border-radius: 5px;
+      
+  
+      &:last-child {
+          margin-right: 0; // Remove margin from the last button
+      }
+  
+      &:hover {
+          color: darken(#fff, 10%); // Slightly darken on hover for effect
+      }
+  }
+
+
+

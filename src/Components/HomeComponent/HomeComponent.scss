@@ -1,0 +1,45 @@
+// HomeComponent.scss
+
+.home-container-allshows {
+    text-align: center; // Center text inside the component
+
+    .heading {
+        margin: 20px 0; // Margin for spacing above and below the heading
+        font-size: 24px; // Font size for the heading
+        font-weight: bold; // Bold font for emphasis
+    }
+}
+
+.team-member-section {
+    display: flex; // Use flexbox for horizontal alignment
+    justify-content: center; // Center the cards
+    flex-wrap: wrap; // Allow wrapping to the next line if needed
+    gap: 20px; // Space between the cards
+    margin: 20px 0; // Margin above and below the section
+}
+
+.event-card {
+    flex: 1 1 calc(20% - 20px); // Allow each card to take 20% of the row width minus the gap
+    max-width: calc(20% - 20px); // Ensure maximum width is 20% of the container
+    background: #fff; // Optional: Card background color
+    border-radius: 8px; // Rounded corners for cards
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Optional: Add shadow for depth
+    text-align: center; // Center the text inside the card
+    overflow: hidden; // Ensure no overflow
+    transition: transform 0.3s; // Smooth scaling effect on hover
+
+    &:hover {
+        transform: scale(1.05); // Scale up on hover
+    }
+
+    .event-image-container {
+        img {
+            width: 100%; // Make the image take full width of the card
+            height: auto; // Keep the aspect ratio
+        }
+    }
+
+    .event-details {
+        padding: 10px; // Add padding around event details
+    }
+}

@@ -1,0 +1,68 @@
+.image-slider {
+    position: relative;
+    width: 100vw; // Full width of the viewport
+    height: 100vh; // Full height of the viewport
+    overflow: hidden; // Hide overflow to prevent scrollbars
+    display: flex; // Center the image
+    justify-content: center; // Center horizontally
+    align-items: center; // Center vertically
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Optional shadow effect
+
+    .slider-image {
+        width: 100%; // Full width
+        height: 100%; // Full height
+        object-fit: cover; // Ensure the image covers the area without distortion
+        transition: opacity 0.5s ease-in-out; // Smooth transition effect
+        opacity: 1; // Start with full opacity
+    }
+
+    .fade {
+        opacity: 0; // Fade out effect
+    }
+
+    .overlay {
+        position: absolute; // Position the overlay on top of the image
+        top: 0; // Cover the full height
+        left: 0; // Cover the full width
+        width: 100%; // Full width
+        height: 100%; // Full height
+        background-color: rgba(255, 255, 255, 0.3); // Semi-transparent white background
+        backdrop-filter: blur(5px); // Apply blur effect
+        transition: opacity 0.5s ease-in-out; // Smooth transition for overlay
+        opacity: 0; // Start with no overlay
+        z-index: 1; // Ensure the overlay is above the image
+    }
+
+    .slider-image.fade + .overlay {
+        opacity: 1; // Show overlay during fade out
+    }
+
+    .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.7); // Semi-transparent background
+        border: none; // Remove default button styles
+        border-radius: 50%; // Round buttons
+        width: 50px; // Width of the button
+        height: 50px; // Height of the button
+        cursor: pointer; // Pointer cursor on hover
+        font-size: 24px; // Font size for arrows
+        color: #007bff; // Arrow color
+        transition: background-color 0.3s; // Transition for hover effect
+        z-index: 2; // Ensure buttons are above other elements
+    
+        &:hover {
+            background-color: rgba(255, 255, 255, 1); // Solid background on hover
+        }
+    }
+    
+
+    .left {
+        left: 20px; // Position left arrow
+    }
+
+    .right {
+        right: 20px; // Position right arrow
+    }
+}
